@@ -1,4 +1,0 @@
-{
-    "cmake.sourceDirectory": "D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/Tasks_example/Task_Status_LED",
-    "idf.flashType": "UART"
-}
