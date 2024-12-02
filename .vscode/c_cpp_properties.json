@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compileCommands": "${workspaceFolder}/Tasks_example/Task_Status_LED/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}
