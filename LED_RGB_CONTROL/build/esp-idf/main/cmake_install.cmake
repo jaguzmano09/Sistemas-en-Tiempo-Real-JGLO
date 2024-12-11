@@ -1,8 +1,8 @@
-# Install script for directory: D:/ESP32/Third_class/LED_RGB_EXAMPLE/main
+# Install script for directory: D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/LED_RGB_CONTROL/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/LED_RGB_EXAMPLE")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/LED_RGB_CONTROL")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

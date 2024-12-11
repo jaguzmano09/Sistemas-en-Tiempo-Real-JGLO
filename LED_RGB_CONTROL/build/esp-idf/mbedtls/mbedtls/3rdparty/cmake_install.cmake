@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/LED_RGB_EXAMPLE")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/LED_RGB_CONTROL")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/ESP32/Third_class/LED_RGB_EXAMPLE/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/cmake_install.cmake")
-  include("D:/ESP32/Third_class/LED_RGB_EXAMPLE/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/cmake_install.cmake")
+  include("D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/LED_RGB_CONTROL/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/cmake_install.cmake")
+  include("D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/LED_RGB_CONTROL/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/cmake_install.cmake")
 
 endif()
 

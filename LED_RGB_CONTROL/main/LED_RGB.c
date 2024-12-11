@@ -79,7 +79,7 @@ void set_rgb_color(uint8_t red, uint8_t green, uint8_t blue) {
     // Set the duty cycle for each channel
 
     // Convert the percentage values to 8-bit values (0-255)
-    red = (red * 255) / 100;
+    red = (red * 2) / 100;
     green = (green * 255) / 100;
     blue = (blue * 255) / 100;
     // Red channel

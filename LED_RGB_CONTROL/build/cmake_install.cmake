@@ -1,8 +1,8 @@
-# Install script for directory: D:/ESP32/Third_class/LED_RGB_EXAMPLE
+# Install script for directory: D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/LED_RGB_CONTROL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/LED_RGB_EXAMPLE")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/LED_RGB_CONTROL")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/ESP32/Third_class/LED_RGB_EXAMPLE/build/esp-idf/cmake_install.cmake")
+  include("D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/LED_RGB_CONTROL/build/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/ESP32/Third_class/LED_RGB_EXAMPLE/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/LED_RGB_CONTROL/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: D:\ESP32\Third_class\LED_RGB_EXAMPLE\build\esp-idf\esp_system\ld\sections.ld.in */
+/* Generated from: D:\ESP32\Repositorio\Sistemas-en-Tiempo-Real-JGLO\LED_RGB_CONTROL\build\esp-idf\esp_system\ld\sections.ld.in */
 
 /*
 

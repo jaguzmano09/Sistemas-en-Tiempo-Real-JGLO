@@ -1,4 +1,4 @@
-/* * Data converted from D:/ESP32/Third_class/LED_RGB_EXAMPLE/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/LED_RGB_CONTROL/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)
