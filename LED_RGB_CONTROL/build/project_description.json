@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "LED_RGB_CONTROL",
-    "project_version":    "e5625a7-dirty",
+    "project_version":    "6507af4-dirty",
     "project_path":       "D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/LED_RGB_CONTROL",
     "idf_path":           "C:/ESP32/v5.3.1/esp-idf",
     "build_dir":          "D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/LED_RGB_CONTROL/build",

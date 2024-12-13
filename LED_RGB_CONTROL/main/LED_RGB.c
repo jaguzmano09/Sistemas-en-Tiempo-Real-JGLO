@@ -11,7 +11,7 @@
  */
 
 
-void configure_led_rgb(void) {
+void configure_led_rgb(uint8_t GPIO_RED, uint8_t GPIO_GREEN, uint8_t GPIO_BLUE, ledc_timer_bit_t LEDC_DUTY_RES) {
     // Configure the LEDC timer
     ledc_timer_config_t ledc_timer = {
         .duty_resolution = LEDC_DUTY_RES,// LEDC timer resolution
@@ -32,7 +32,7 @@ void configure_led_rgb(void) {
     ledc_channel_config_t ledc_channel_r = {
         .channel = LEDC_CHANNEL_R, // LEDC channel
         .duty = 0, // Initial duty cycle
-        .gpio_num = LEDC_OUTPUT_IO_R, // GPIO pin (18)
+        .gpio_num = GPIO_RED, // GPIO 
         .speed_mode = LEDC_MODE, // LEDC speed mode
         .timer_sel = LEDC_TIMER // LEDC timer
     };
@@ -47,7 +47,7 @@ void configure_led_rgb(void) {
     ledc_channel_config_t ledc_channel_g = {
         .channel = LEDC_CHANNEL_G, // LEDC channel
         .duty = 0, // Initial duty cycle
-        .gpio_num = LEDC_OUTPUT_IO_G, // GPIO pin (19)
+        .gpio_num = GPIO_GREEN, // GPIO
         .speed_mode = LEDC_MODE, // LEDC speed mode
         .timer_sel = LEDC_TIMER // LEDC timer
     };
@@ -62,7 +62,7 @@ void configure_led_rgb(void) {
     ledc_channel_config_t ledc_channel_b = {
         .channel = LEDC_CHANNEL_B, // LEDC channel
         .duty = 0, // Initial duty cycle
-        .gpio_num = LEDC_OUTPUT_IO_B, // GPIO pin (21)
+        .gpio_num = GPIO_BLUE, // GPIO
         .speed_mode = LEDC_MODE, // LEDC speed mode
         .timer_sel = LEDC_TIMER // LEDC timer
     };
@@ -75,13 +75,16 @@ void configure_led_rgb(void) {
 }
 
 // Set the color of the RGB LED
-void set_rgb_color(uint8_t red, uint8_t green, uint8_t blue) {
+void set_rgb_color(uint8_t red, uint8_t green, uint8_t blue, ledc_timer_bit_t LEDC_DUTY_RES) {
     // Set the duty cycle for each channel
-
-    // Convert the percentage values to 8-bit values (0-255)
-    red = (red * 2) / 100;
-    green = (green * 255) / 100;
-    blue = (blue * 255) / 100;
+    // Check if the values are within the valid range
+    if (red > 100) red = 100;
+    if (blue > 100) blue = 100;
+    if (green > 100) green = 100;
+    // Convert the percentage values to bit values 
+    red = (red * ((1 << LEDC_DUTY_RES) - 1)) / 100;
+    green = (green * ((1 << LEDC_DUTY_RES) - 1)) / 100;
+    blue = (blue * ((1 << LEDC_DUTY_RES) - 1)) / 100;
     // Red channel
     ledc_set_duty(LEDC_MODE, LEDC_CHANNEL_R, red);
     ledc_update_duty(LEDC_MODE, LEDC_CHANNEL_R);
