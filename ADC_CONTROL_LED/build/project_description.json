@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "ADC_CONTROL_LED",
-    "project_version":    "9f63b00",
+    "project_version":    "03941c8-dirty",
     "project_path":       "D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/ADC_CONTROL_LED",
     "idf_path":           "C:/ESP32/v5.3.1/esp-idf",
     "build_dir":          "D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/ADC_CONTROL_LED/build",

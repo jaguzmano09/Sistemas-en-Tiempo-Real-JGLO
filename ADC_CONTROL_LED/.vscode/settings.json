@@ -8,6 +8,9 @@
     "idf.toolsPathWin": "C:\\ESP32\\.espressif",
     "idf.flashType": "UART",
     "files.associations": {
-        "format": "c"
+        "format": "c",
+        "adc_cali_scheme.h": "c",
+        "adc_cali.h": "c",
+        "queue.h": "c"
     }
 }
