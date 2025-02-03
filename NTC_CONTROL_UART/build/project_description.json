@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "NTC_CONTROL_UART",
-    "project_version":    "03941c8-dirty",
+    "project_version":    "a4c7c4a-dirty",
     "project_path":       "D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/NTC_CONTROL_UART",
     "idf_path":           "C:/ESP32/v5.3.1/esp-idf",
     "build_dir":          "D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/NTC_CONTROL_UART/build",
