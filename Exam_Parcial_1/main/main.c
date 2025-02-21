@@ -219,6 +219,7 @@ static void button_task(){
     }      
 }
 
+
 /**
  * @brief Configures the color limits for the RGB LED.
  *

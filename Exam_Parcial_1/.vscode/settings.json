@@ -10,6 +10,9 @@
     "files.associations": {
         "freertos.h": "c",
         "stdio.h": "c",
-        "adc_library.h": "c"
+        "adc_library.h": "c",
+        "adc_ntc.h": "c",
+        "led_rgb_library.h": "c",
+        "semphr.h": "c"
     }
 }

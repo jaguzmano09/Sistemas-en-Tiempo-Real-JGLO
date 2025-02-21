@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<script src='jquery-3.3.1.min.js'></script>
+		<link rel="stylesheet" href="app.css">
+		<script async src="app.js"></script>
+		<title>WEB TEMPERATURE AND VOLTAGE ESP32</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+	<header>
+		<h1>ESP32 CONTROL TEMPERATURE AND DATA UART</h1>
+	</header>
+		
+	<div id="OTA">
+	<h2>ESP32 Firmware Update</h2>
+		<label id="latest_firmware_label">Latest Firmware: </label>
+		<div id="latest_firmware"></div> 
+		<input type="file" id="selected_file" accept=".bin" style="display: none;" onchange="getFileInfo()" />
+		<div class="buttons">
+			<input type="button" value="Select File" onclick="document.getElementById('selected_file').click();" />
+			<input type="button" value="Update Firmware" onclick="updateFirmware()" />
+		</div>
+		<h4 id="file_info"></h4>	
+		<h4 id="ota_update_status"></h4>
+	</div>
+	
+	<hr>
+	<div id="Potentiometer">
+		<h2>Potentiometer Voltage</h2>
+		<label for="pot_voltage" style="margin-right: 5px;" >Voltage: </label>
+		<div id="pot_voltage" style="display: inline;" >Loading...</div> mV
+	</div>
+	
+	<hr>
+
+	<div id="Temperature_NTC">
+		<h2>Temperature Reading for NTC</h2>
+		<label for="temperature_reading" style="margin-right: 5px;">Temperature: </label> 
+		<div id="temperature_reading" style="display: inline;">Loading...</div> °C
+	</div>
+
+	<hr>
+		
+	<div id="WiFiConnect">
+		<h2>ESP32 Interaction</h2>
+		Interaction with the ESP32 board
+		<div class="buttons">
+		<h4>LED Toogle</h4>
+			<input id="toogle_led" type="button" value="Toogle board led" />
+		</div>
+		<hr>
+		<h3>ON/OFF send temperature uart</h3>
+		<hr>
+		<h4>Send temperature via UART</h4>
+			<input id="ON_Send_UART" type="button" value="Turn on uart temperature sending" />
+		<hr>
+		<h4>Stop sending temperature via UART</h4>
+			<input id="OFF_Send_UART" type="button" value="Turn off uart temperature sending" />
+		</div>
+		<div id="wifi_connect_credentials_errors"></div>
+		<h4 id="wifi_connect_status"></h4>
+	</div>
+		
+	</body>
+<html>

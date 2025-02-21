@@ -1,0 +1,112 @@
+
+body {
+    background-color: #f4f7f8;  /* Un color más suave para el fondo */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  /* Simplificación de la lista de fuentes */
+    color: #05263a;
+    line-height: 1.6;  /* Mejora la legibilidad con un mayor interlineado */
+    margin: 0;  /* Elimina el margen por defecto */
+    padding: 20px;  /* Añade un poco de espacio alrededor del contenido */
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    margin: 0 0 20px 0; /* Añadí un margen inferior para separar el título del contenido */
+    padding: 10px;
+    font-size: 2.5em; /* Un tamaño más grande para hacer el título más prominente */
+    color: #333333; /* Un tono de negro más suave */
+    font-weight: bold; /* Asegura que el título sea más fuerte visualmente */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+}
+
+
+h2 {
+    font-size: 1.8rem;  /* Un tamaño de fuente mayor para los encabezados */
+    color: #04263a;  /* Un tono ligeramente más oscuro que el texto principal */
+    margin-bottom: 15px;  /* Espacio debajo del encabezado */
+}
+
+
+
+/* h2 {
+	font-size: 1.4em;
+    color: #000000;
+} */
+h3 {
+    font-size: 1.3em; /* Un poco más grande para mejorar la jerarquía */
+    color: #333333; /* Usé un gris oscuro en lugar de negro */
+}
+
+h4 {
+    font-size: 1.1em; /* Un tamaño intermedio para mantener la jerarquía */
+    color: #333333; /* Gris oscuro en lugar de negro */
+}
+
+.gr {
+    color: #2a9d8f; /* Un verde más suave y accesible */
+}
+
+.rd {
+    color: #e76f51; /* Un rojo más accesible */
+}
+
+#latest_firmware, #latest_firmware_label {
+    display: inline-block; /* Cambié a inline-block por mayor control sobre los elementos */
+}
+
+#latest_firmware {
+    color: #1d3557; /* El color sigue igual para el firmware */
+}
+
+
+.section {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    padding: 5px;
+    display: flex;
+    gap: 10px; /* Espacio entre botones */
+}
+
+input[type="button"] {
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background: linear-gradient(135deg, #0272B7, #01C6FB);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background: linear-gradient(135deg, #025a94, #0194c6);
+    transform: scale(1.05); /* Efecto de crecimiento */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+input[type="button"]:active {
+    transform: scale(0.98); /* Efecto de pulsado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
