@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "Web_temperature-esp32",
-    "project_version":    "321ef32-dirty",
+    "project_version":    "fbf6607-dirty",
     "project_path":       "D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/Web_temperature-esp32",
     "idf_path":           "C:/ESP32/v5.3.1/esp-idf",
     "build_dir":          "D:/ESP32/Repositorio/Sistemas-en-Tiempo-Real-JGLO/Web_temperature-esp32/build",

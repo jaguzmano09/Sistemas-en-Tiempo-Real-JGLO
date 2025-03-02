@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<script src='jquery-3.3.1.min.js'></script>
+		<link rel="stylesheet" href="app.css">
+		<script async src="app.js"></script>
+		<title>Control ESP32</title>
+	</head>
+	<body>
+	<header>
+		<h1>ESP32 WEB RGB and Temperature control</h1>
+	</header>
+	<hr>
+	<div id="OTA">
+	<h2>ESP32 Firmware Update</h2>
+		<label id="latest_firmware_label">Latest Firmware: </label>
+		<div id="latest_firmware"></div> 
+		<input type="file" id="selected_file" accept=".bin" style="display: none;" onchange="getFileInfo()" />
+		<div class="buttons">
+			<input type="button" value="Select File" onclick="document.getElementById('selected_file').click();" />
+			<input type="button" value="Update Firmware" onclick="updateFirmware()" />
+		</div>
+		<h4 id="file_info"></h4>	
+		<h4 id="ota_update_status"></h4>
+	</div>
+
+		
+	<div id="WiFiConnect">
+		<h2>ESP32 WiFi Connect</h2>
+		<section>
+			<input id="connect_ssid" type="text" maxlength="32" placeholder="SSID" value="">
+			<input id="connect_pass" type="password" maxlength="64" placeholder="Password" value="">
+			<p id="wifi-status" style="font-weight: bold;"></p>
+			<input type="checkbox" onclick="showPassword()">Show Password
+		</section>
+		<div class="buttons">
+			<input id="connect_wifi" type="button" value="Connect" />		
+		<h3>LED toogle</h3>
+			<button onclick="toogle_led()">toogle led</button>
+			
+		</div>
+		<div id="wifi_connect_credentials_errors"></div>
+		<h4 id="wifi_connect_status"></h4>
+	</div>
+
+	<div id="Potenciometro">
+		<h2>Potentiometer voltage value</h2>
+		<label for="pot_voltage" style="margin-right: 5px;" >Voltage: </label>
+		<div id="pot_voltage" style="display: inline;" >Loading...</div> mV
+	</div>
+
+	<div id="Temperature_NTC">
+		<h2>Temperature Reading for NTC</h2>
+		<label for="temperature_reading" style="margin-right: 5px;">Temperature: </label> 
+		<div id="temperature_reading" style="display: inline;">Loading...</div> °C
+	</div>
+	<hr>
+
+	<div id ="RGB_values">
+		<h2>RGB values </h2>
+		<h3>Red Value brightness:</h3>
+		<label for="red_value">Red Color brightness: <span id="sliderValue_red">0</span></label>
+		<input type="range" id="red_value" min="0" max="100" value="0" oninput="UpdateSlider_red()">
+
+		<h3>Green Value brightness:</h3>
+		<label for="green_value">Green Color brightness: <span id="sliderValue_green">0</span></label>
+		<input type="range" id="green_value" min="0" max="100" value="0" oninput="UpdateSlider_green()">
+	
+		<h3>Blue Value brightness:</h3>
+		<label for="blue_value">Blue Color brightness: <span id="sliderValue_blue">0</span></label>
+		<input type="range" id="blue_value" min="0" max="100" value="0" oninput="UpdateSlider_blue()">
+
+		<br><br>
+		<input id="sendRGB" type="button" value="Send RGB" onclick="sendRGBValues()" />
+	
+	</div>
+
+	<div id ="ONOFF_UART">
+	<h2>Turn on/off UART</h2>
+	<h3>Turn on UART</h3>
+	<input id="ON_Send_UART" type="button" value="Turn on uart temperature sending" />
+	<h3>Turn off UART</h3>
+	<input id="OFF_Send_UART" type="button" value="Turn off uart temperature sending" />
+
+	<div id="message_uart" style="margin-top: 10px; font-weight: bold;"></div>
+	</div>
+	<hr>	
+	</body>
+<html>

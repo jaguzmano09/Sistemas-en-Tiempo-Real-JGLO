@@ -1,0 +1,15 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPathWin": "c:\\ESP32\\v5.3.1\\esp-idf",
+    "idf.pythonInstallPath": "C:\\ESP32\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
+    "idf.openOcdConfigs": [
+        "board/esp32-wrover-kit-3.3v.cfg"
+    ],
+    "idf.portWin": "COM7",
+    "idf.toolsPathWin": "C:\\ESP32\\.espressif",
+    "files.associations": {
+        "http_server.h": "c",
+        "led_rgb.h": "c"
+    },
+    "idf.flashType": "UART"
+}
